@@ -7,7 +7,7 @@ public class Menus : MonoBehaviour
 {
     public void Retry()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void Quit()

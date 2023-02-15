@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private WheelCollider[] wheels;
     [SerializeField] private Transform[] wheelsTransform;
+
+    //[SerializeField] private List<WheelCollider> wheelCollidersList = new List<WheelCollider>();
+
     [SerializeField] private float motorPower = 100f;
     [SerializeField] private float steerPower = 25;
 
@@ -33,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 wheels[i].steerAngle = Input.GetAxis("Horizontal") * steerPower;
             }
+
+            UpdateWheel(wheels[i], wheelsTransform[i]);
         }
 
         //UpdateWheel(wheels, wheelsTransform); 
