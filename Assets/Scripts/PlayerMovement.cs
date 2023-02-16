@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
             UpdateWheel(wheels[i], wheelsTransform[i]);
         }
 
-        //UpdateWheel(wheels, wheelsTransform); 
+          
     }
 
 
