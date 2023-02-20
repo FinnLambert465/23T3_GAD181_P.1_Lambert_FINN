@@ -5379,7 +5379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1047989730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5396,9 +5396,7 @@ MonoBehaviour:
   - {fileID: 8456438077043808136, guid: fdc7fb28aa084c44088fb508b419b748, type: 3}
   - {fileID: 7793445843250035333, guid: 2d9ac5a0ad3078246813143953db3b5d, type: 3}
   - {fileID: 1315264283549405015, guid: 7719f5193b72a924b97ea37668458471, type: 3}
-  xPos: 0
-  zPos: 0
-  enemyCount: 0
+  enemyCount: 1
 --- !u!4 &1047989731
 Transform:
   m_ObjectHideFlags: 0
@@ -10503,7 +10501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953778188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.290893, y: 29.5159, z: 48.91624}
+  m_LocalPosition: {x: -6.290893, y: 29.5159, z: -58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10970,10 +10968,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1542558409070621948, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.244
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635583491457879005, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635583491525153940, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635583492277430550, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635583492874666857, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1988531727164918465, guid: 3860304017fb48640855682832dc232c,
         type: 3}
       propertyPath: m_Name
       value: playerSedanSports
+      objectReference: {fileID: 0}
+    - target: {fileID: 2860963386912930697, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.232
       objectReference: {fileID: 0}
     - target: {fileID: 5022782511542143331, guid: 3860304017fb48640855682832dc232c,
         type: 3}
@@ -10993,7 +11021,7 @@ PrefabInstance:
     - target: {fileID: 5022782511542143331, guid: 3860304017fb48640855682832dc232c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.6295257
+      value: -93
       objectReference: {fileID: 0}
     - target: {fileID: 5022782511542143331, guid: 3860304017fb48640855682832dc232c,
         type: 3}
@@ -11029,6 +11057,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749808264753390429, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: motorPower
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475018145820378297, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024669730808889163, guid: 3860304017fb48640855682832dc232c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.591
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3860304017fb48640855682832dc232c, type: 3}
