@@ -10298,7 +10298,7 @@ PrefabInstance:
     - target: {fileID: 5749808264753390429, guid: 3860304017fb48640855682832dc232c,
         type: 3}
       propertyPath: motorPower
-      value: 500
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 7475018145820378297, guid: 3860304017fb48640855682832dc232c,
         type: 3}
