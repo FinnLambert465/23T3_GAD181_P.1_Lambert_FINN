@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YouFailed.unity
     guid: 0e894df5870de1c4aa1b95be1cab38ba
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: b9661bef3dfccd74fad44031f30cdd59
   m_configObjects: {}
