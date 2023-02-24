@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     //[SerializeField] private List<WheelCollider> wheelCollidersList = new List<WheelCollider>(); if i wanted to make a list
 
 
-    [SerializeField] private float motorPower = 100f;
+    [SerializeField] private float motorPower = 20f;
     [SerializeField] private float steerPower = 25;
 
     [SerializeField] private GameObject centerMass;
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         foreach (var wheel in wheels)
         {
-            wheel.motorTorque = Input.GetAxis("Vertical") * ((motorPower * 5) / 4);
+            wheel.motorTorque = Input.GetAxis("Vertical") * motorPower * 500 * Time.deltaTime;
         }
 
         for(int i = 0; i < wheels.Length; i++)
