@@ -8,6 +8,8 @@ TagManager:
   - BackRight
   - FrontLeft
   - FrontRight
+  - Music
+  - Countdown
   layers:
   - Default
   - TransparentFX
