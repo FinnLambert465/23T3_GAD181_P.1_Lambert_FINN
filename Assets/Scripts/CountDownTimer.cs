@@ -69,6 +69,15 @@ public class CountDownTimer : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        Fuel.onPickUpFuel += AddTime;
+    }
+    void OnDisable()
+    {
+        Fuel.onPickUpFuel -= AddTime;
+    }
+
     public void AddTime()
     {
         currentTime += 3 ;
