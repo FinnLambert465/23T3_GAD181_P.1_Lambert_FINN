@@ -68,4 +68,9 @@ public class CountDownTimer : MonoBehaviour
             SceneManager.LoadScene(3);
         }
     }
+
+    public void AddTime()
+    {
+        currentTime += 3 ;
+    }
 }
