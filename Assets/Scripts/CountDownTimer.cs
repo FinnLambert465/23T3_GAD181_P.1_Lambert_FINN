@@ -8,15 +8,20 @@ using UnityEngine.SceneManagement;
 
 public class CountDownTimer : MonoBehaviour
 {
-    [SerializeField] float currentTime = 0f;
-    [SerializeField] float startingTime = 10f;
-    [SerializeField] float startingTrafficTime = 8f;
-    [SerializeField] float trafficTime = 0f;
+    public static float currentTime = 0f;
+    public float startingTime = 10f;
+    public float startingTrafficTime = 8f;
+    public float trafficTime = 0f;
+
     public GameObject noLight;
     public GameObject redLight;
     public GameObject yellowLight;
     public GameObject greenLight;
+
     public GameObject cage;
+
+    
+    
 
     [SerializeField] TMP_Text countDownUI;
 
@@ -34,6 +39,7 @@ public class CountDownTimer : MonoBehaviour
     void Update()
     {
         trafficTime -= 1 * Time.deltaTime;
+        
 
         if (trafficTime <= 5)
         {
@@ -55,6 +61,7 @@ public class CountDownTimer : MonoBehaviour
             greenLight.SetActive(false);
             
         }
+        
     }
 
     public void CountingDown()
@@ -67,5 +74,14 @@ public class CountDownTimer : MonoBehaviour
             currentTime = 0;
             SceneManager.LoadScene(3);
         }
+    }
+
+    public void Checkpoint()
+    {
+        currentTime += 10;
+        
+        
+        
+
     }
 }
