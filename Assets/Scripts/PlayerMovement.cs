@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         foreach (var wheel in wheels)
         {
-            wheel.motorTorque = Input.GetAxis("Vertical") * motorPower * 500 * Time.deltaTime;
+            wheel.motorTorque = Input.GetAxis("Vertical") * motorPower * 500 * Time.deltaTime ;
         }
 
         for(int i = 0; i < wheels.Length; i++)

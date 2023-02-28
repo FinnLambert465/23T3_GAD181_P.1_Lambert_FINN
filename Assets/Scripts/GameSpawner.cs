@@ -42,4 +42,16 @@ public class GameSpawner : MonoBehaviour
 
         }
     }
+
+
+
+   private void PreventSpawnerOverlap(Vector3 spawnPos)
+    {
+        for (int i = 0; i < theEnemy.Length; i++)
+        {
+            Vector3 centerPoint = theEnemy[i].bounds.center;
+            float width = theEnemy[i].bounds.extents.x;
+            floaty
+        }
+    }
 }
