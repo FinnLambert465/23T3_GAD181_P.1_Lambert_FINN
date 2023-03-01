@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 
@@ -17,6 +18,7 @@ public class CountDownTimer : MonoBehaviour
     public GameObject yellowLight;
     public GameObject greenLight;
     public GameObject cage;
+    [SerializeField] private Slider fuelSlider;
 
     [SerializeField] TMP_Text countDownUI;
 
@@ -47,6 +49,7 @@ public class CountDownTimer : MonoBehaviour
         {
             yellowLight.SetActive(false);
             CountingDown();
+            SetFuelBar();
             Time.timeScale = 1;
             cage.SetActive(false);
         }
@@ -81,5 +84,11 @@ public class CountDownTimer : MonoBehaviour
     public void AddTime()
     {
         currentTime += 3 ;
+    }
+
+    private void SetFuelBar()
+    {
+        fuelSlider.value = currentTime;
+
     }
 }
