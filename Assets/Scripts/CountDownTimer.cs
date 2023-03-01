@@ -10,7 +10,7 @@ public class CountDownTimer : MonoBehaviour
 {
     [SerializeField] float currentTime = 0f;
     [SerializeField] float startingTime = 10f;
-    [SerializeField] float startingTrafficTime = 8f;
+    [SerializeField] float startingTrafficTime = 5f;
     [SerializeField] float trafficTime = 0f;
     public GameObject noLight;
     public GameObject redLight;
@@ -35,7 +35,7 @@ public class CountDownTimer : MonoBehaviour
     {
         trafficTime -= 1 * Time.deltaTime;
 
-        if (trafficTime <= 5)
+       if (trafficTime <= 5)
         {
             noLight.SetActive(false);
         }
