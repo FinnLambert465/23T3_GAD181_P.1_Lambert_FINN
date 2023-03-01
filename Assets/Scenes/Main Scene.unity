@@ -5501,9 +5501,8 @@ MonoBehaviour:
   - {fileID: 7793445843250035333, guid: 2d9ac5a0ad3078246813143953db3b5d, type: 3}
   - {fileID: 1315264283549405015, guid: 7719f5193b72a924b97ea37668458471, type: 3}
   - {fileID: 610902960065894852, guid: b5620c6648c4ce144a7e7dc01ef4740d, type: 3}
-  theCollider: []
-  radius: 0
-  enemyCount: 1
+  existingEnemies: []
+  enemyCount: 0
 --- !u!4 &1047989731
 Transform:
   m_ObjectHideFlags: 0
