@@ -18,7 +18,10 @@ public class CountDownTimer : MonoBehaviour
     public GameObject yellowLight;
     public GameObject greenLight;
     public GameObject cage;
+    [SerializeField] private Image fuelBar;
     [SerializeField] private Slider fuelSlider;
+    [SerializeField] private Color fuelColor;
+
 
     [SerializeField] TMP_Text countDownUI;
 
@@ -71,7 +74,7 @@ public class CountDownTimer : MonoBehaviour
             SceneManager.LoadScene(3);
         }
     }
-
+  
     void OnEnable()
     {
         Fuel.onPickUpFuel += AddTime;
@@ -83,12 +86,19 @@ public class CountDownTimer : MonoBehaviour
 
     public void AddTime()
     {
-        currentTime += 3 ;
+        currentTime += 1.75f ;
     }
 
     private void SetFuelBar()
     {
         fuelSlider.value = currentTime;
-
+        if (currentTime <= 6.66f)
+        {
+            fuelBar.color = fuelColor;
+        }
+        if (currentTime <= 3.33f)
+        {
+            fuelBar.color = Color.red;
+        }
     }
 }

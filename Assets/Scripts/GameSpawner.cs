@@ -52,7 +52,7 @@ public class GameSpawner : MonoBehaviour
                     xPos = Random.Range(-30, 30);
                     zPos = Random.Range(-101, 120);
                     Debug.Log("Chosen Position Is: ["+ new Vector3(xPos, 2, zPos) + "].");
-                } while (Vector3.Distance(new Vector3(xPos, 2, zPos), enemy.transform.position) < 100);
+                } while (Vector3.Distance(new Vector3(xPos, 2, zPos), enemy.transform.position) < 750);
 
                 Debug.Log("Final Chosen Position Is: [" + new Vector3(xPos, 2, zPos) + "].");
 
