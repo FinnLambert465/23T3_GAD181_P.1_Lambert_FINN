@@ -17,10 +17,9 @@ public class GameSpawner : MonoBehaviour
 
     private IEnumerator EnemyDrop()
     {
-        Debug.Log("EnemyDrop Has Been Called From " + gameObject.name);
+       
         while (enemyCount < 15)
         {
-            Debug.Log("Enemy Count" + enemyCount);
             int enemyPicker = Random.Range(0, theEnemy.Length);
             float xPos = Random.Range(-30, 30);
             float zPos = Random.Range(-101, 120);
@@ -44,17 +43,17 @@ public class GameSpawner : MonoBehaviour
             //-------------------------------------------------------------------------------------------------------
             foreach (GameObject enemy in existingEnemies)
             {
-                Debug.Log("Trying To Spawn Enemy");
+                
                 // 1 pick a random position
                 // 2 if that position is near to any existing enemies, repeat from 1
                 do
                 {
                     xPos = Random.Range(-30, 30);
                     zPos = Random.Range(-101, 120);
-                    Debug.Log("Chosen Position Is: ["+ new Vector3(xPos, 2, zPos) + "].");
-                } while (Vector3.Distance(new Vector3(xPos, 2, zPos), enemy.transform.position) < 750);
+                    
+                } while (Vector3.Distance(new Vector3(xPos, 2, zPos), enemy.transform.position) < 1500);
 
-                Debug.Log("Final Chosen Position Is: [" + new Vector3(xPos, 2, zPos) + "].");
+               
 
                 // 3 spawn an enemy at that position
                 Instantiate(theEnemy[enemyPicker], new Vector3(xPos, 2, zPos), Quaternion.identity);
