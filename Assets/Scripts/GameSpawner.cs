@@ -51,7 +51,7 @@ public class GameSpawner : MonoBehaviour
                     xPos = Random.Range(-30, 30);
                     zPos = Random.Range(-101, 120);
                     
-                } while (Vector3.Distance(new Vector3(xPos, 2, zPos), enemy.transform.position) < 1500);
+                } while (Vector3.Distance(new Vector3(xPos, 2, zPos), enemy.transform.position) < 3000);
 
                
 

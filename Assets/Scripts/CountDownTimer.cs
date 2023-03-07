@@ -71,7 +71,7 @@ public class CountDownTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
     }
   
